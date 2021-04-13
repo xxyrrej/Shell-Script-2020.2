@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "$(find . -maxdepth 1 -type f -executable -delete)"
+for arq in $(ls); do
+  [ -x $arq ] && rm $arq
+done
