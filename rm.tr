@@ -1,0 +1,5 @@
+#!/bin/bash
+
+function rm_tr {
+  tr -d [A-Z] < $1
+}
